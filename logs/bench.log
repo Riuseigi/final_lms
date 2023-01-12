@@ -1,0 +1,45 @@
+2023-01-12 07:13:48,868 DEBUG cd final_lms && python3 -m venv env
+2023-01-12 07:13:57,499 DEBUG cd final_lms && /home/ojt12/final_lms/env/bin/python -m pip install --quiet --upgrade pip
+2023-01-12 07:14:03,917 LOG Getting frappe
+2023-01-12 07:14:03,918 DEBUG cd final_lms/apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2023-01-12 07:14:13,050 LOG Installing frappe
+2023-01-12 07:14:13,052 DEBUG cd /home/ojt12/final_lms && /home/ojt12/final_lms/env/bin/python -m pip install --quiet --upgrade -e /home/ojt12/final_lms/apps/frappe 
+2023-01-12 07:16:43,652 DEBUG cd /home/ojt12/final_lms/apps/frappe && yarn install
+2023-01-12 07:18:53,273 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-01-12 07:18:53,274 DEBUG cd final_lms && bench build
+2023-01-12 07:18:53,545 INFO /usr/local/bin/bench build
+2023-01-12 07:19:52,219 LOG setting up backups
+2023-01-12 07:19:52,247 LOG backups were set up
+2023-01-12 07:19:52,248 INFO Bench final_lms initialized
+2023-01-12 07:19:52,713 INFO A newer version of bench is available: 5.15.1 → 5.16.0
+2023-01-12 07:20:23,577 INFO /usr/local/bin/bench find .
+2023-01-12 07:20:24,043 INFO A newer version of bench is available: 5.15.1 → 5.16.0
+2023-01-12 07:20:37,222 INFO /usr/local/bin/bench new-app library_management
+2023-01-12 07:20:37,233 LOG creating new app library_management
+2023-01-12 07:21:13,278 LOG Installing library_management
+2023-01-12 07:21:13,279 DEBUG cd /home/ojt12/final_lms && /home/ojt12/final_lms/env/bin/python -m pip install --quiet --upgrade -e /home/ojt12/final_lms/apps/library_management 
+2023-01-12 07:21:17,672 DEBUG bench build --app library_management
+2023-01-12 07:21:17,916 INFO /usr/local/bin/bench build --app library_management
+2023-01-12 07:21:26,218 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-01-12 07:21:26,709 INFO A newer version of bench is available: 5.15.1 → 5.16.0
+2023-01-12 07:21:53,336 INFO /usr/local/bin/bench new-site troy.library
+2023-01-12 07:25:26,019 INFO /usr/local/bin/bench --site troy.library add-to-hosts
+2023-01-12 07:25:45,717 INFO /usr/local/bin/bench serve --port 8050
+2023-01-12 07:26:57,161 INFO /usr/local/bin/bench --site troy.library install-app library_management
+2023-01-12 07:27:31,863 INFO /usr/local/bin/bench --site troy.library list-apps
+2023-01-12 07:28:15,192 INFO /usr/local/bin/bench serve --port 8050
+2023-01-12 07:30:58,892 INFO /usr/local/bin/bench serve --port 8069
+2023-01-12 07:35:10,932 INFO /usr/local/bin/bench --site troy.library console
+2023-01-12 07:35:36,484 INFO /usr/local/bin/bench --site troy.library mariadb
+2023-01-12 07:36:08,869 INFO /usr/local/bin/bench set-config -g developer_mode true
+2023-01-12 07:36:18,028 INFO /usr/local/bin/bench serve --port 8069
+2023-01-12 07:47:46,311 INFO /usr/local/bin/bench --site troy.library mariadb
+2023-01-12 07:53:33,013 INFO /usr/local/bin/bench --site troy.library set-config server_script_enabled true
+2023-01-12 07:53:44,769 INFO /usr/local/bin/bench serve --port 8069
+2023-01-12 07:53:54,983 INFO /usr/local/bin/bench serve --port 8069
+2023-01-12 07:54:14,141 INFO /usr/local/bin/bench serve --port 8068
+2023-01-12 08:44:46,131 INFO /usr/local/bin/bench serve --port 8068
+2023-01-12 12:00:02,622 INFO /usr/local/bin/bench --verbose --site all backup
+2023-01-12 18:00:02,806 INFO /usr/local/bin/bench --verbose --site all backup
+2023-01-13 00:00:02,619 INFO /usr/local/bin/bench --verbose --site all backup
+2023-01-13 01:11:36,663 INFO /usr/local/bin/bench serve --port 8068

@@ -1,0 +1,21 @@
+{
+    "frappe": {
+        "resolution": {
+            "commit_hash": null,
+            "branch": null
+        },
+        "required": [],
+        "idx": 1,
+        "version": "15.0.0-dev"
+    },
+    "library_management": {
+        "is_repo": true,
+        "resolution": {
+            "commit_hash": "98da6fb7ae7cb691869af44b33b826c9a052838d",
+            "branch": "master"
+        },
+        "required": [],
+        "idx": 2,
+        "version": "0.0.1"
+    }
+}

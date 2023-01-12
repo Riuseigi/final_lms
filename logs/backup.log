@@ -1,0 +1,18 @@
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _7a65cb439f734a36 -p********** _7a65cb439f734a36 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./troy.library/private/backups/20230112_120007-troy_library-database.sql.gz
+
+Backup Summary for troy.library at 2023-01-12 12:02:02.394176
+Config  : ./troy.library/private/backups/20230112_120007-troy_library-site_config_backup.json 126.0B
+Database: ./troy.library/private/backups/20230112_120007-troy_library-database.sql.gz         251.6KiB
+Backup for Site troy.library has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _7a65cb439f734a36 -p********** _7a65cb439f734a36 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./troy.library/private/backups/20230112_180018-troy_library-database.sql.gz
+
+Backup Summary for troy.library at 2023-01-12 18:02:50.159505
+Config  : ./troy.library/private/backups/20230112_180018-troy_library-site_config_backup.json 126.0B
+Database: ./troy.library/private/backups/20230112_180018-troy_library-database.sql.gz         251.6KiB
+Backup for Site troy.library has been successfully completed
+self=$$;  ( mysqldump --single-transaction --quick --lock-tables=false -u _7a65cb439f734a36 -p********** _7a65cb439f734a36 -h 127.0.0.1 -P 3306   || kill $self )  | /usr/bin/gzip >> ./troy.library/private/backups/20230113_000024-troy_library-database.sql.gz
+
+Backup Summary for troy.library at 2023-01-13 00:02:37.312762
+Config  : ./troy.library/private/backups/20230113_000024-troy_library-site_config_backup.json 126.0B
+Database: ./troy.library/private/backups/20230113_000024-troy_library-database.sql.gz         251.6KiB
+Backup for Site troy.library has been successfully completed
